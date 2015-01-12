@@ -1,10 +1,9 @@
-
 def comp_guess number
 		guess = rand(1 .. 100)
 		puts guess
 	if guess > number
 		puts "to high"
-		guess = rand(guess .. 1)
+		guess = rand(1 .. guess)
 	elsif guess < number
 		puts "to low"
 		guess = rand(guess .. 100)
